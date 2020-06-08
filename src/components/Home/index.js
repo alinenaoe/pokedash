@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { useState, useEffect, useCallback } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { CardDeck, Container } from 'react-bootstrap';
+import { CardColumns, Container } from 'react-bootstrap';
 import PokeCard from '../PokeCard';
 
 const App = () => {
@@ -29,6 +29,7 @@ const App = () => {
 
     }, [setData]);
 
+
     useEffect(() => {
         getPokemons();
     }, [getPokemons]);
@@ -36,11 +37,11 @@ const App = () => {
  
     return (
     <Container>
-        <CardDeck>
+        <CardColumns>
             { pokeData.map( pokemon => (
                 <PokeCard key={pokemon.id} data={pokemon} />
             )) }
-        </CardDeck>
+        </CardColumns>
  
     </ Container>
   );
