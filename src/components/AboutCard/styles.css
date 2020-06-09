@@ -7,9 +7,19 @@
     color: #ffd166;
 }
 
+.about-body img {
+    width: 40px;
+    margin: 10px;
+}
+
+.about-body a {
+    color: #ffd166;
+    text-decoration: none;
+}
+
 .card-back .about-body {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 25px;
 }
 

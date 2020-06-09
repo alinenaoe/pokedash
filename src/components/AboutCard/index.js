@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { Card } from 'react-bootstrap';
 import './styles.css';
 import logo from './poke_logo.png';
-import github from './github.png';
-import linkedin from './linkedin.png';
+import github from './github-image.svg';
+import linkedin from './linkedin.svg';
 
 
 const AboutCard = () => {
@@ -39,9 +39,11 @@ const AboutCard = () => {
                         <Card.Body className="pokecard-body about-body">
                             <a href="https://github.com/alinenaoe" target="_blank" rel="noopener">
                                 <img src={github}/> 
+                                /alinenaoe
                             </a>
                             <a href="https://www.linkedin.com/in/alinenaoe/" target="_blank" rel="noopener">
                                 <img src={linkedin}/> 
+                                /in/alinenaoe
                             </a>                     
                         </Card.Body>
                     </div>
