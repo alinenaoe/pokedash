@@ -10,9 +10,13 @@
 .card-back .about-body {
     display: flex;
     justify-content: space-around;
+    margin-top: 25px;
 }
 
 .about-image {
     background-color: #06d6a0;
 }
 
+.about-card {
+    background-color: #26547c;
+}

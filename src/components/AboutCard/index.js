@@ -17,7 +17,7 @@ const AboutCard = () => {
                 className={flippedAbout === true ? 'card-container about-container is-flipped' : "card-container about-container"}
                 onClick={flippedAbout === true ? (() => setFlippedAbout(false)) : (() => setFlippedAbout(true))}
             >
-                <Card className="pokecard"> 
+                <Card className="pokecard about-card"> 
                     <div className="card-face card-front">
                         <Card.Title className="pokename">About</Card.Title>
                         <div className="pokecard-image about-image">
