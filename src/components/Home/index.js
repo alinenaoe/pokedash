@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CardColumns, Container } from 'react-bootstrap';
 import PokeCard from '../PokeCard';
+import AboutCard from '../AboutCard';
 
 const App = () => {
 
@@ -36,8 +37,10 @@ const App = () => {
 
  
     return (
-    <Container>
+    <Container fluid className="mt-5 mb-5">
+
         <CardColumns>
+            <AboutCard />
             { pokeData.map( pokemon => (
                 <PokeCard key={pokemon.id} data={pokemon} />
             )) }
