@@ -21,7 +21,7 @@ const AboutCard = () => {
                     <div className="card-face card-front">
                         <Card.Title className="pokename">About</Card.Title>
                         <div className="pokecard-image about-image">
-                            <img src={logo} />
+                            <img src={logo} alt="logo pokemon"/>
                         </div>
                         <Card.Body className="pokecard-body about-body">
                             <span>MADE BY</span>
@@ -34,15 +34,15 @@ const AboutCard = () => {
                     <div className="card-face card-back">
                         <Card.Title className="pokename">About</Card.Title>
                         <div className="pokecard-image about-image">
-                            <img src={logo} />
+                            <img src={logo} alt="logo pokemon"/>
                         </div>
                         <Card.Body className="pokecard-body about-body">
-                            <a href="https://github.com/alinenaoe" target="_blank" rel="noopener">
-                                <img src={github}/> 
+                            <a href="https://github.com/alinenaoe" target="_blank" rel="noopener noreferrer">
+                                <img src={github} alt="logo github"/> 
                                 /alinenaoe
                             </a>
-                            <a href="https://www.linkedin.com/in/alinenaoe/" target="_blank" rel="noopener">
-                                <img src={linkedin}/> 
+                            <a href="https://www.linkedin.com/in/alinenaoe/" target="_blank" rel="noopener noreferrer">
+                                <img src={linkedin} alt="logo linkedin" /> 
                                 /in/alinenaoe
                             </a>                     
                         </Card.Body>
